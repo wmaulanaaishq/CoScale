@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import Link from "next/link";
 import KartuPermintaan from "../components/KartuPermintaan";
 
 const CANISTER_ID = process.env.NEXT_PUBLIC_CANISTER_ID;
@@ -37,7 +38,13 @@ export default function HomePage() {
 
   return (
     <div className="mx-auto max-w-4xl p-6">
-      <h1 className="text-2xl font-bold">Kawan UMKM - Dasbor Permintaan Kolektif</h1>
+      <div className="flex items-center justify-between">
+        <h1 className="text-2xl font-bold">Kawan UMKM - Dasbor Permintaan Kolektif</h1>
+        <div className="space-x-3 text-sm">
+          <Link className="text-blue-600 hover:underline" href="/umkm">UMKM</Link>
+          <Link className="text-blue-600 hover:underline" href="/pembayaran">Pembayaran</Link>
+        </div>
+      </div>
       {loading && <p className="mt-4 text-gray-600">Memuat...</p>}
       {error && <p className="mt-4 text-red-600">{error}</p>}
       <div className="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-2">
