@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "canisters": {
+    "kawan_umkm_backend": {
+      "type": "motoko",
+      "main": "src/kawan_umkm_backend/main.mo"
+    }
+  },
+  "defaults": {
+    "build": {
+      "packtool": ""
+    }
+  },
+  "networks": {
+    "local": {
+      "bind": "127.0.0.1:4943",
+      "type": "ephemeral"
+    }
+  }
+}
