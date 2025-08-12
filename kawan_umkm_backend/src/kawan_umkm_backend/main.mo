@@ -1,6 +1,7 @@
 import Array "mo:base/Array";
 import Iter "mo:base/Iter";
 import Nat "mo:base/Nat";
+import Nat16 "mo:base/Nat16";
 import Text "mo:base/Text";
 import Http "mo:base/Http";
 

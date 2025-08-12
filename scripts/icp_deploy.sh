@@ -14,7 +14,7 @@ command -v dfx >/dev/null 2>&1 || { echo "dfx tidak ditemukan. Install dulu di W
 
 # Stop jika ada replica lama, lalu start baru
 set +e
-(dfX stop) >/dev/null 2>&1
+(dfx stop) >/dev/null 2>&1
 set -e
 
 dfx start --background
