@@ -1,0 +1,19 @@
+service : {
+  getPermintaan : () -> (vec record {
+    id : nat;
+    namaBarang : text;
+    totalKuantitas : nat;
+    unit : text;
+    jumlahPartisipan : nat;
+    status : text
+  }) query;
+  tambahPermintaan : (record {
+    id : nat;
+    namaBarang : text;
+    totalKuantitas : nat;
+    unit : text;
+    jumlahPartisipan : nat;
+    status : text
+  }) -> ();
+  resetData : () -> ();
+}
